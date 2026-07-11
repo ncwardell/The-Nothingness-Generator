@@ -23,12 +23,14 @@ Each subdomain is portable: other subdomains import it via its module file.
 
 | Subdomain | Module file | What it articulates |
 |---|---|---|
+| **Vacuum** | [`vacuum/vacuum.md`](vacuum/vacuum.md) | The ground state: virtual particles as unwitnessed polar pairs; the vacuum as undifferentiated $\Sigma = 0$; real particles as the witnessed case |
 | **Spacetime** | [`spacetime/spacetime.md`](spacetime/spacetime.md) | The arena: breathing torus + dynamics + spin |
 | **Spectrum** | [`spectrum/spectrum.md`](spectrum/spectrum.md) | Particle structure: meeting points, depth/coupling, mass equation |
 | **Forces** | [`forces/forces.md`](forces/forces.md) | Coupling structure: Lagrangian, gauge group, force couplings |
 
 The natural dependency chain:
 
+- **Vacuum** depends on math+algebra and the [dynamics](../dynamics/dynamics.md) persistence-and-collapse layer. Provides the ground state and its content. It is a *structural* overlay (no numerical prediction), and the framework's cleanest qualitative contact with physics.
 - **Spacetime** depends only on math+algebra. Provides the arena.
 - **Spectrum** depends on spacetime. Provides what inhabits the arena.
 - **Forces** depends on spacetime and spectrum. Provides how things interact.
@@ -84,6 +86,7 @@ Each topic file in this experiment must hold to that discipline: bundled minimal
 
 Initial port in progress.
 
+- **Vacuum** — articulated (Topics 01–04). Structural overlay of QFT virtual particles onto the polar-pair machinery; makes no numerical prediction. Bootstrap pending (coincides with the dynamics Phase III bootstrap read physically).
 - **Spacetime** — Phase I in progress. Topic 01 (the breathing torus) articulated. Topics 02–03 planned.
 - **Spectrum** — module file in place. Topics planned.
 - **Forces** — module file in place. Topics planned.
