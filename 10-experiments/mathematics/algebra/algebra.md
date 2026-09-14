@@ -48,6 +48,13 @@ That single commitment is enough. Once we admit that the dynamics in arithmetic 
 | **[08. Field extensions](construction/08-field-extensions.md)** | $\mathbb{Q}(\sqrt 5, i)$ — the algebraic field structure |
 | **[09. The bootstrap](construction/09-the-bootstrap.md)** | Verification: arithmetic+algebra articulates the framework's seed |
 
+**Phase II — the parameterized self-reference relation** (post-bootstrap extension):
+
+| Topic | Generates |
+|---|---|
+| **[10. The metallic generalization](construction/10-the-metallic-generalization.md)** | $x = k + 1/x$, with $k$ constrained by Internality to produced values; **only $k = 1$ regenerates Conservation** |
+| **[11. Metallic means are Pisot units](construction/11-metallic-means-are-pisot-units.md)** | Every $\sigma_k$ is a quadratic Pisot unit — forced by the invariant $\sigma_k\bar\sigma_k = -1$ |
+
 The bootstrap is the success condition. With arithmetic providing the substrate and algebra providing the articulation language, the combined package generates the framework's seed back in its own vocabulary.
 
 ## Forced vs. chosen, in the lens of itself
@@ -56,6 +63,7 @@ The bootstrap is the success condition. With arithmetic providing the substrate 
 
 - The lens itself: articulating via algebra.
 - A1: the commitment to algebraic articulation of dynamics. Without this, we have arithmetic alone.
+- A2 (Phase II): the commitment that the unit coefficient in $x = 1 + 1/x$ is a parameter. Without A2, $\phi$ is the sole eigenvalue of self-reference and Phase II does not exist.
 
 **Forced (given the choices above):**
 
@@ -65,6 +73,9 @@ The bootstrap is the success condition. With arithmetic providing the substrate 
 - The degenerate triple identity.
 - The complex unit $i$ from $\phi\psi = -1$.
 - The bootstrap verification.
+- *(Phase II, given A2)* The restriction of $k$ to values the system has produced — forced by Internality.
+- *(Phase II, given A2)* That $k = 1$ is the unique family member regenerating Conservation, the residue being $k - 1$.
+- *(Phase II, given A2)* That every $\sigma_k$ is a quadratic Pisot unit, forced by $\sigma_k\bar\sigma_k = -1$.
 
 **Forced at the meta-level:** given the lens choice and the bootstrap goal, A1 is the minimal commitment needed. Algebra is the algebra of arithmetic structures — there is no way to articulate self-reference more abstractly without admitting algebraic articulation of dynamics.
 
@@ -90,4 +101,6 @@ This means the algebra lens has a special status: it is the lens in which the fr
 
 ## Status
 
-Construction in progress; topics 01–06 ported from the prior arithmetic chain. Bootstrap verified.
+Phase I construction in progress; topics 01–06 ported from the prior arithmetic chain. Bootstrap verified.
+
+Phase II (topics 10–11) articulates the parameterized self-reference relation under commitment A2. Both topics are forced given A2; neither is required by the bootstrap, which stands on Phase I alone.
