@@ -48,11 +48,11 @@ This is the **self-reference equation**: $x$ articulated as the unit of distinct
 
 An earlier draft claimed here that, with $x^2 = x + 1$ in view, arithmetic's Fibonacci commitment is "retroactively recognized as forced."
 
-**That claim is withdrawn: it was circular.** This topic derives $x^2 = x + 1$ *from* the Fibonacci recurrence — [arithmetic topic 08](../../arithmetic/construction/08-fibonacci.md) is listed among the dependencies above, and the commitment note concedes that it "only recognizes the algebraic shadow of an already-existing dynamic." A result derived from Fibonacci cannot also be what forces Fibonacci.
+**That claim is withdrawn: it deferred.** This topic derives $x^2 = x + 1$ *from* the Fibonacci recurrence — [arithmetic topic 08](../../arithmetic/construction/08-fibonacci.md) is listed among the dependencies above, and the commitment note concedes that it "only recognizes the algebraic shadow of an already-existing dynamic." A result derived from Fibonacci cannot also be its warrant. The problem was not that the two arise together — mutual constitution is native to this framework — but that each pointed at the other for content neither held.
 
 Arithmetic topic 08 now stands on its own, by enumeration: at that point only $\{1, -1, 0\}$ have been generated, so an order-2 recurrence admits exactly four coefficient pairs; two are periodic and generate no new values; the two survivors differ only by sign. The dependency runs one way — arithmetic to algebra — and this topic builds on it legitimately.
 
-**What the convergence is actually worth.** That the substrate's forced dynamic has the seed equation as its characteristic polynomial is a real result: two levels of articulation, reached independently, landing on one form. That is the framework's strongest evidential standard (see [transferability](../../../../15-cross-domain-analysis/transferability.md)) — and it counts *only because* the derivations are independent, which they are only now that neither leans on the other.
+**What the convergence is actually worth.** That the substrate's forced dynamic has the seed equation as its characteristic polynomial is a real result: two levels of articulation, reached independently, landing on one form. That is the framework's strongest evidential standard (see [transferability](../../../../15-cross-domain-analysis/transferability.md)) — and it counts *only because* each side now holds its own argument. The circle was not removed; it was filled, and a filled circle can be seen whole.
 
 ## Comparison
 

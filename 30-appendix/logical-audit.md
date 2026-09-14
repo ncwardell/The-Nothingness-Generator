@@ -79,46 +79,67 @@ That removes a commitment from the framework's first move instead of defending o
 
 ---
 
-## Finding 6 — Arithmetic 08 and Algebra 01 grounded each other ⚠ **was the most consequential; now fixed**
+## Finding 6 — Arithmetic 08 and Algebra 01 deferred to each other ⚠ **was the most consequential; now fixed**
 
 **Found and repaired in this pass.** Recorded because it is the kind of defect most worth watching for, and because $\phi$ — and therefore every downstream experiment — sat on top of it.
 
-The loop, as it stood:
+### The defect is not circularity, and not order
 
-- `arithmetic/08-fibonacci.md` § *What minimality is shadowing* justified Fibonacci as forced by pointing **forward** to algebra: its characteristic polynomial is $x^2 = x+1$, the seed equation, and *"the full argument lives in algebra."*
-- `algebra/01-the-self-reference-equation.md` derives $x^2 = x+1$ **by taking the characteristic polynomial of Fibonacci** — it lists arithmetic 08 among its dependencies, and concedes its commitment *"only recognizes the algebraic shadow of an already-existing dynamic."*
+A first diagnosis called this a *circular dependency* and treated the loop itself as the problem. **That diagnosis was wrong**, and the framework's own documents say why: [`atoms.md`](../02-the-process/atoms.md) holds that the structural fact is **atemporal** — *"atoms and their composites coexist in the totality… There is no 'before/after' at the framework level — time is itself a lens-level structure."* Time is generated downstream, at [arithmetic topic 06](../10-experiments/mathematics/arithmetic/construction/06-iteration-and-time.md). Sequence is an artifact of running-in-time, not a property of the structure. A ban on loops would also ban $E$ and $-E$, which arise together as one cut.
 
-Each grounded the other. Neither derived $x^2 = x + 1$ from Self-Reference independently, so the claim that Fibonacci is forced had no non-circular support.
+**Mutual constitution is native here and is not a defect.** What went wrong was something else.
 
-**The repair** grounds Fibonacci inside arithmetic, with no forward reference. At topic 08 only $\{1, -1, 0\}$ have been generated, so an order-2 recurrence's coefficients have only four possible pairs. Two are periodic (roots on the unit circle) and never leave $\{0,1,-1\}$, failing the topic's own requirement to generate new values. The remaining two produce identical magnitudes and differ only by sign, which Polarity and bidirectional iteration (topic 07) already govern. One dynamic survives, up to a sign convention — **forced, not minimal**.
+### Co-arising versus deferral
 
-Algebra 01 now legitimately builds on arithmetic 08, and the dependency runs one way.
+| | Co-arising | Deferral |
+|---|---|---|
+| Example | $E$ and $-E$ | arithmetic 08 ↔ algebra 01, as they stood |
+| Where the content lives | **in the pair** — see them together and nothing is pending | **nowhere in the loop** — each node points at the other |
+| Following a pointer | there is nothing to follow; it is one cut | returns you to where you started, still empty-handed |
+| Status | closed, complete | open, leaking |
 
-**What is gained rather than lost:** the convergence — that the substrate-level forced dynamic has the seed equation as its characteristic polynomial — becomes *evidence* instead of circularity. Two independent derivations landing on one form is the framework's own strongest evidential standard. It only counts as independent because arithmetic 08 now stands alone.
+The loop as it stood:
 
-**Watch for this pattern elsewhere.** Any topic justified by pointing forward to a later module deserves a check that the later module does not point back.
+- `arithmetic/08-fibonacci.md` justified Fibonacci by pointing at algebra — *"the full argument lives in algebra."*
+- `algebra/01-the-self-reference-equation.md` derives $x^2 = x+1$ **by taking the characteristic polynomial of Fibonacci**, lists arithmetic 08 among its dependencies, and concedes its commitment *"only recognizes the algebraic shadow of an already-existing dynamic."*
+
+Each named the other as its warrant. **Nowhere in the loop was the argument actually located** — it was an IOU passed between two parties, neither holding the content.
+
+### The correct name, in the framework's own vocabulary
+
+This is a failure of **atomicity**, and therefore of **Closure** — not of sequence. [`atoms.md`](../02-the-process/atoms.md) already forbids it:
+
+> Composites must terminate at atoms — otherwise the recursion has no internal grounding (infinite descent with nothing standing under it would be external grounding, which Internality forbids).
+
+Neither node was an atom. Each was a composite whose parts lived elsewhere, and following the chain never landed. That is infinite descent in the shape of a circle. The defect needs no appeal to before-and-after; it is diagnosed entirely by whether a node contains its own content.
+
+### The repair, and what it produced
+
+Fibonacci is now grounded inside arithmetic. At topic 08 only $\{1, -1, 0\}$ have been generated, so an order-2 recurrence admits exactly four coefficient pairs. Two are periodic (roots on the unit circle), never leave $\{0,1,-1\}$, and fail the topic's own requirement to generate new values. The two survivors produce identical magnitudes and differ only by sign, which Polarity and bidirectional iteration (topic 07) already govern. One dynamic remains, up to a sign convention — **forced, not minimal**.
+
+Each node now holds its own argument: arithmetic 08 by enumeration, algebra 01 by taking the characteristic polynomial.
+
+**And only now does the circle become worth having.** The two land on the same form, and that convergence is visible as a whole — two independent derivations meeting, which is the framework's strongest evidential standard. Before, the loop was empty and deferring; now it is closed and full. **The repair did not remove a circle. It filled one.**
+
+### The test to apply elsewhere
+
+Not *"does anything point forward?"* — that is the wrong axis. Instead:
+
+> **Can the loop be seen whole, or only traversed?** A loop that contains its content is a fixed point. A loop whose every node defers is a regress wearing a circle's shape.
 
 ---
 
-## Finding 2 — The self-bootstrap presupposes its own third step ⚠ **substantive**
+## Finding 2 — The self-bootstrap is a fixed point, not a derivation ℹ **downgraded — presentational**
 
-`02-the-process/self-bootstrap.md` correctly distinguishes **bootstrap** (constructive self-articulation) from **self-proof** (formal consistency from within), and disclaims the latter. That neutralizes the Gödel/Tarski objection cleanly.
+**This finding was originally stated as substantive and is now downgraded**, for the reason established in Finding 6: it was diagnosed on the axis of *order*, which is the wrong axis.
 
-It does not address a different objection: **order**.
+The observation itself stands. The bootstrap runs in three steps — postulates, then standing properties, then the five operating principles — and *applying the generator* in steps 1 and 2 already uses requirement-tracking, forced-vs-chosen and atomicity, which are step 3's outputs. The method is used to derive the method. (A second instance sits in step 1: *"the strongest non-vacuous constraint is total balance"* — an extremality judgement of the kind `05-boundary.md` lists as a commitment.)
 
-The bootstrap runs in three steps:
+**But that is co-arising, not deferral.** Each of the three steps *produces content*; none says "the real argument is elsewhere." The loop can be seen whole. By Finding 6's test it is a fixed point, and fixed points are the framework's own subject matter — self-bootstrap is explicitly listed in [`audit.md`](audit.md) as forced by Internality + Self-Reference.
 
-1. Apply the generator to "what is the minimum commitment-set for self-grounding articulation?" → the three postulates.
-2. Apply the generator to "what must any totality satisfying these postulates be like?" → the four standing properties.
-3. Apply the generator to "how is articulation actually performed?" → the five operating principles (requirement tracking, forced-vs-chosen, atomicity, …).
+So there is no defect to fix here. What remains is **presentational**: `self-bootstrap.md` currently reads as a *derivation* running in three steps, which invites the order objection and then has no answer to it. Presented as a **fixed point** — the generator is what survives being applied to itself — the objection dissolves rather than needing a defence, because a fixed point is not supposed to have a first step.
 
-But *applying the generator* in steps 1 and 2 already requires requirement-tracking, forced-vs-chosen discipline, and atomicity — the outputs of step 3. The method is used to derive the method.
-
-A second instance sits inside step 1: "the strongest non-vacuous constraint is total balance ($\Sigma = 0$)." *Strongest* is a minimality/extremality judgement — by `05-boundary.md`'s own table, a commitment. So a commitment is used to derive the postulate set that the commitments are supposed to rest on.
-
-**This is not fatal**, and it may be inherent to any self-grounding project. But the document currently reads as if disclaiming self-proof disposes of the circularity worry, and it does not — this is a separate one, and it is unaddressed.
-
-**Recommended:** name it. A short section — "the bootstrap is not order-independent; the operating principles are presupposed by the steps that derive them" — would be consistent with the repo's own honesty standard and costs nothing. Presenting it as a *fixed point* (the generator is what survives being applied to itself) rather than a *derivation* would be both more accurate and more interesting.
+**Recommended:** reframe the three steps as one self-application shown from three angles, and state plainly that the operating principles are presupposed by the steps that exhibit them. That is not an embarrassment to be disclosed; on the framework's own terms it is the expected shape.
 
 ---
 
@@ -196,7 +217,7 @@ After the repairs above, the repository was swept programmatically for the defec
 | Check | Before | After |
 |---|---|---|
 | Topics depending on a **later** topic in their own chain | 1 | **0** |
-| Prose justifying a topic by pointing **forward** to a later module | 2 | **0** |
+| Nodes **deferring** their argument to another node | 2 | **0** |
 | Commitments resting on **minimality** in any construction topic | 2 | **0** |
 | Module-level mutual dependence | 2 candidates | **0 real** |
 | Broken links and section anchors | 7 | **0** |
@@ -236,8 +257,8 @@ The generator's epistemic discipline is the strongest thing in the repository. F
 | # | Finding | Severity | Fix |
 |---|---|---|---|
 | 1 | `02-polarity.md` self-contradiction on minimality | **fixed** | both sections rewritten as generative availability; commitment removed from arithmetic topic 01 |
-| 2 | Self-bootstrap presupposes step 3 | substantive | name it; reframe as fixed point |
+| 2 | Self-bootstrap reads as a derivation | **downgraded** — presentational | reframe as a fixed point; co-arising, not deferral |
 | 3 | `existence.md` vs `03-self-reference.md` on the two readings | substantive | name the strong reading as a commitment |
 | 4 | "Four standing properties" overcounts | presentational | restate as one + three |
-| 6 | Arithmetic 08 ↔ Algebra 01 mutual grounding | **was critical** | **fixed** — Fibonacci now forced within arithmetic by enumeration |
+| 6 | Arithmetic 08 ↔ Algebra 01 **deferral** (an atomicity/Closure failure, not a sequence one) | **was critical** | **fixed** — each node now holds its own argument; the circle is filled, not removed |
 | 5 | Paraconsistency lacks a demarcation criterion | methodological | demarcate by **generativity**: a tension is load-bearing on both sides and produces structure; a defect has an inert side |
