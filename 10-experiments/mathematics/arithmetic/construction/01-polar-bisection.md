@@ -17,7 +17,11 @@ No prior topics in this experiment.
 
 ## Commitment
 
-**Strong polarity.** The compensating contribution required by [Polarity (weak)](../../../../03-the-grammar/02-polarity.md) is *concentrated in a single complement element*. This is the only commitment in this topic. It selects single-paired compensation over distributed compensation, on minimality grounds.
+**None.** Earlier drafts committed here to "strong polarity" — concentrating the compensating contribution in a single complement element — on minimality grounds. That commitment is not needed, and claiming it conceded more than the framework has to.
+
+By [Polarity (weak)](../../../../03-the-grammar/02-polarity.md), $\Sigma = 0$ restricted to $E$ already yields "$E$" and "the rest." To obtain *distributed* compensation instead, one must partition the rest — which requires plurality, and a criterion distinguishing one compensator from another. **Neither has been generated.** Both are downstream products of this very chain; invoking them here would import them from outside, which [Internality](../../../../01-postulates/internality.md) forbids.
+
+The paired form is therefore not chosen over the distributed form. It is the **un-partitioned state** — what the cut leaves when nothing further has been generated. See [Polarity](../../../../03-the-grammar/02-polarity.md) (Reading note) for the general argument: *generative availability*, as distinct from minimality.
 
 ## Construction
 

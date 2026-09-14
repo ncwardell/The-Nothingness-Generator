@@ -33,9 +33,32 @@ Any experiment that requires paired polarity — a clearly distinguished $E$ aga
 
 ## Reading note
 
-It is tempting to say: "the minimal way to satisfy the weak form is the paired form, so paired polarity follows by minimality." This is true but does not make paired polarity strictly derivable, because *minimality* is an additional commitment. The postulates do not say "structure must be minimal." A non-minimal totality with distributed compensation satisfies the postulates equally well.
+It is tempting to say: "the minimal way to satisfy the weak form is the paired form, so paired polarity follows by minimality." Stated that way it does *not* establish paired polarity, because minimality is a selection principle — a commitment — and the postulates do not say "structure must be minimal."
 
-Any experiment that wants paired polarity must commit to a minimality principle and state which kind of minimality is invoked (see [forced-vs-chosen](../02-the-process/forced-vs-chosen.md) for the discipline).
+But the usual objection to paired polarity fails for a different reason, and it is worth stating precisely, because it is the objection this framework attracts most often.
+
+**The objection:** *a totality with compensation distributed across many elements satisfies the postulates equally well, so the paired form is one option among several.*
+
+**Why it does not apply.** That objection compares totalities — it surveys the space of structures satisfying the postulates and observes that several do. **Surveying that space is a view from outside the totality, which [Internality](../01-postulates/internality.md) forbids.** The framework may not ask "which totalities satisfy the postulates?" It may only ask "what is articulable here, given what has been generated?"
+
+Asked that way, distributed compensation is not an available alternative:
+
+- $\Sigma = 0$ restricted to $E$ yields "$E$" and "**the rest**." That is the weak form, already derived above.
+- Distributed compensation requires **partitioning the rest** — which requires plurality, and a criterion for telling one compensator from another.
+- Neither has been generated. Plurality and discrimination are downstream products of the chain that polar bisection *begins*. Invoking them here imports them from outside.
+
+So the paired form is not selected over the distributed form on grounds of economy. **It is the un-partitioned state — what the cut leaves when nothing further has been generated.** Distributed compensation is not a rejected alternative; at this point it is not constructible.
+
+This is **generative availability**, and it differs in kind from minimality:
+
+| | Says | Status |
+|---|---|---|
+| Minimality | among available options, take the smallest | a selection principle — **a commitment** |
+| Generative availability | only one option is constructible yet | an availability constraint — **forced by Internality** |
+
+An experiment invoking paired polarity therefore need not commit to a minimality principle. It needs to show that, at the point of use, no partition of the compensating remainder has yet been generated. Where richer structure *has* been generated, alternatives become articulable and genuine choices reappear — see [forced-vs-chosen](../02-the-process/forced-vs-chosen.md).
+
+**Corollary.** Forcing is strongest where least has been generated, and weakens as a chain accumulates material. The framework's earliest moves are its most forced ones, not its most assumed.
 
 ## What follows
 
@@ -57,7 +80,7 @@ These require commitments listed at the [boundary](05-boundary.md).
 
 ## Composite articulations of compensation (not alternatives)
 
-Binary (single complement, $\{E, -E\}$) is the **cardinality-minimal flavor of atomicity at the polarity level**. Once atomicity is read structurally (forced by Internality, see [atoms.md](../02-the-process/atoms.md)) and minimality is read as "import-the-least" under Internality, binary is forced as the atom — not one option among parallel candidates.
+Binary (single complement, $\{E, -E\}$) is **the atom at the polarity level, by generative availability** (see the Reading note above). Atomicity is forced structurally by Internality (see [atoms.md](../02-the-process/atoms.md)); *which* atom obtains here is settled not by a flavor of minimality but by what is constructible at this point — and the un-partitioned cut is the only thing that is. Binary is forced, not one option among parallel candidates.
 
 What might look like "alternative articulations" — ternary, n-ary, distributed, continuous — are **composites of binary at higher levels of articulation**, not alternative atoms. The order is structural, not temporal: atom first, composites after, on a bigger canvas. The math experiment already produces them as forced consequences.
 

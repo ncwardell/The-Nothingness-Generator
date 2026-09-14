@@ -10,7 +10,7 @@ Scope is the generator level only — postulates, grammar, process. Findings are
 
 ---
 
-## Finding 1 — `02-polarity.md` contradicts itself on minimality ⚠ **substantive**
+## Finding 1 — `02-polarity.md` contradicted itself on minimality ✅ **fixed in this pass**
 
 The file makes both of the following claims.
 
@@ -69,13 +69,34 @@ If forcing comes from what has been generated, then **forcing is strongest where
 
 It also shows the principle does not prove too much. Once integers and operations exist, several articulations *are* constructible, and choosing algebra over geometry (commitment A1) is a genuine choice. Availability bites hardest at the beginning and loosens downstream — which is exactly the behaviour a self-generating chain should have.
 
-**Recommended:** rewrite both sections rather than deleting one.
+**Applied**, rather than deleting one:
 
 1. In Claim A, withdraw "satisfies the postulates equally well" — it argues from an external vantage. Replace with: weak polarity is what is derived; paired polarity follows because no partition of the remainder is yet articulable.
 2. Restate Claim B as **generative availability**, not as a flavor of minimality.
-3. Then correct `arithmetic/construction/01-polar-bisection.md`: its Commitment section should read **"None — distributed compensation is not yet articulable"** rather than committing to strong polarity on minimality grounds.
+3. `arithmetic/construction/01-polar-bisection.md` now reads **Commitment: None** — distributed compensation is not yet articulable — where it previously committed to strong polarity on minimality grounds.
 
 That removes a commitment from the framework's first move instead of defending one — and it answers the objection at its root rather than conceding it.
+
+---
+
+## Finding 6 — Arithmetic 08 and Algebra 01 grounded each other ⚠ **was the most consequential; now fixed**
+
+**Found and repaired in this pass.** Recorded because it is the kind of defect most worth watching for, and because $\phi$ — and therefore every downstream experiment — sat on top of it.
+
+The loop, as it stood:
+
+- `arithmetic/08-fibonacci.md` § *What minimality is shadowing* justified Fibonacci as forced by pointing **forward** to algebra: its characteristic polynomial is $x^2 = x+1$, the seed equation, and *"the full argument lives in algebra."*
+- `algebra/01-the-self-reference-equation.md` derives $x^2 = x+1$ **by taking the characteristic polynomial of Fibonacci** — it lists arithmetic 08 among its dependencies, and concedes its commitment *"only recognizes the algebraic shadow of an already-existing dynamic."*
+
+Each grounded the other. Neither derived $x^2 = x + 1$ from Self-Reference independently, so the claim that Fibonacci is forced had no non-circular support.
+
+**The repair** grounds Fibonacci inside arithmetic, with no forward reference. At topic 08 only $\{1, -1, 0\}$ have been generated, so an order-2 recurrence's coefficients have only four possible pairs. Two are periodic (roots on the unit circle) and never leave $\{0,1,-1\}$, failing the topic's own requirement to generate new values. The remaining two produce identical magnitudes and differ only by sign, which Polarity and bidirectional iteration (topic 07) already govern. One dynamic survives, up to a sign convention — **forced, not minimal**.
+
+Algebra 01 now legitimately builds on arithmetic 08, and the dependency runs one way.
+
+**What is gained rather than lost:** the convergence — that the substrate-level forced dynamic has the seed equation as its characteristic polynomial — becomes *evidence* instead of circularity. Two independent derivations landing on one form is the framework's own strongest evidential standard. It only counts as independent because arithmetic 08 now stands alone.
+
+**Watch for this pattern elsewhere.** Any topic justified by pointing forward to a later module deserves a check that the later module does not point back.
 
 ---
 
@@ -170,7 +191,7 @@ The founding tension is held because holding it generates. The polarity contradi
 
 ## What the audit did not find
 
-- **No broken derivation** in the grammar. The weak-polarity derivation is valid arithmetic; the self-reference derivation is valid given the stated reading of Existence; Closure follows from Internality trivially, as claimed.
+- **No broken derivation** in the grammar, apart from Finding 6 (now repaired). The weak-polarity derivation is valid arithmetic; the self-reference derivation is valid given the stated reading of Existence; Closure follows from Internality trivially, as claimed.
 - **No stealth import** in the arithmetic, algebra, or topology chains. Every construction examined uses only prior topics plus the postulates; external mathematics appears only in `## Comparison` sections, always in the form "in standard mathematics X; here it is generated as Y." The discipline is real and consistently applied.
 - **No overclaiming in the experiment overviews.** The physics modules label their depth and particle assignments as **chosen hypotheses**, which is the correct status for them.
 
@@ -182,8 +203,9 @@ The generator's epistemic discipline is the strongest thing in the repository. F
 
 | # | Finding | Severity | Fix |
 |---|---|---|---|
-| 1 | `02-polarity.md` self-contradiction on minimality | substantive | rewrite **both** sections as generative availability; then **remove** the commitment from arithmetic topic 01 |
+| 1 | `02-polarity.md` self-contradiction on minimality | **fixed** | both sections rewritten as generative availability; commitment removed from arithmetic topic 01 |
 | 2 | Self-bootstrap presupposes step 3 | substantive | name it; reframe as fixed point |
 | 3 | `existence.md` vs `03-self-reference.md` on the two readings | substantive | name the strong reading as a commitment |
 | 4 | "Four standing properties" overcounts | presentational | restate as one + three |
+| 6 | Arithmetic 08 ↔ Algebra 01 mutual grounding | **was critical** | **fixed** — Fibonacci now forced within arithmetic by enumeration |
 | 5 | Paraconsistency lacks a demarcation criterion | methodological | demarcate by **generativity**: a tension is load-bearing on both sides and produces structure; a defect has an inert side |

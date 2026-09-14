@@ -16,9 +16,9 @@ Operations are in place ($+, -, \cdot, /$). Iteration is admissible (forward and
 
 ## Commitment
 
-**Self-referential iteration of minimal order with minimal coefficients and minimal initial conditions.** A recurrence generates a sequence by referring to its own past. Within arithmetic alone, the minimum non-trivial self-referential recurrence is the available articulation, justified on [atomicity](../../../../02-the-process/atoms.md) grounds at every level (order, coefficients, initial conditions).
+**None.** Earlier drafts committed here to "minimal order with minimal coefficients," on atomicity grounds. That commitment is not needed: the candidates are not infinite and then narrowed by taste — **only four exist**, and Closure eliminates all but one up to sign. The construction below enumerates them.
 
-This presents as a commitment within arithmetic. [Algebra](../../algebra/algebra.md) reframes it as forced: see [What minimality is shadowing](#what-minimality-is-shadowing) below.
+The reason the field is finite is [Internality](../../../../01-postulates/internality.md). A recurrence's coefficients must be *values*, and the only values generated so far are $\{1, -1, 0\}$ (topics 02 and 04). Coefficients outside that set are not available to be chosen — they have not been generated. This is *generative availability*, not minimality; see [Polarity](../../../../03-the-grammar/02-polarity.md) (Reading note) for the general form of the argument.
 
 ## Construction
 
@@ -30,11 +30,31 @@ A self-referential sequence has $F(n)$ depending on prior $F$ values. Walk the c
 
 Minimum order for a self-determining self-referential structure: 2.
 
-Among order-2 integer recurrences, the simplest non-trivial is $a = b = 1$:
+### The coefficients are not freely chosen
+
+An order-2 recurrence is $F(n) = a F(n-1) + b F(n-2)$. Its coefficients must be **values**, and the value system at this point contains only $\{1, -1, 0\}$. Nothing else has been generated, so nothing else is available.
+
+- $b = 0$ collapses the recurrence to order 1 — already excluded as not self-determining.
+- $a = 0$ leaves $F(n) = bF(n-2)$, which is two uncoupled order-1 chains, not a genuine order-2 self-reference.
+
+So $a, b \in \{1, -1\}$: **exactly four candidates.** Enumerate all of them, with $F(0) = 0$, $F(1) = 1$ (the only values available for initial conditions):
+
+| $(a,b)$ | Characteristic | Roots | Sequence | Generates? |
+|---|---|---|---|---|
+| $(1, 1)$ | $x^2 - x - 1$ | $\phi, \psi$ (real, $\|\phi\| > 1$) | $0,1,1,2,3,5,8,13,\ldots$ | **yes** |
+| $(1, -1)$ | $x^2 - x + 1$ | complex, $\|r\| = 1$ | $0,1,1,0,-1,-1,0,\ldots$ | no — period 6 |
+| $(-1, 1)$ | $x^2 + x - 1$ | real, $\|r_{\max}\| > 1$ | $0,1,-1,2,-3,5,-8,\ldots$ | **yes** |
+| $(-1, -1)$ | $x^2 + x + 1$ | complex, $\|r\| = 1$ | $0,1,-1,0,1,-1,\ldots$ | no — period 3 |
+
+**Two candidates are eliminated by Closure.** $(1,-1)$ and $(-1,-1)$ have characteristic roots on the unit circle: they are periodic and never leave $\{0, 1, -1\}$. They generate no new values, so they fail this topic's requirement — the question asked for a dynamic that *generates new values internally*.
+
+**The two survivors generate identical magnitudes.** $(-1, 1)$ produces $0, 1, -1, 2, -3, 5, -8, \ldots$ — the same sequence as $(1,1)$ with alternating sign. They differ only in which polarity is carried along the iteration, and iteration is already bidirectional (topic 07) with sign already governed by Polarity. The two are the same structure read in two directions, not two structures.
+
+What remains is therefore a single dynamic, fixed up to a sign convention:
 
 $$F(n) = F(n-1) + F(n-2)$$
 
-With initial conditions $F(0) = 0, F(1) = 1$ (using values already in the system), the recurrence generates:
+With $F(0) = 0, F(1) = 1$, it generates:
 
 $$0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, \ldots$$
 
@@ -52,23 +72,23 @@ The sequence introduces new values: $F(3) = 2, F(4) = 3, F(5) = 5, F(6) = 8, \ld
 - **Self-Reference:** the recurrence is self-referential by construction.
 - **Internality of Relations:** internal recurrence relation.
 
-## Why this is minimal
+## Why this is forced, not minimal
 
 - Orders 0 and 1 do not produce a self-determined eigenvalue.
-- Order 2 with integer coefficients has the simplest choice $a = b = 1$.
-- Initial conditions $0, 1$ are minimal among existing values.
+- At order 2, only $\{1, -1, 0\}$ have been generated, so only four coefficient pairs exist. Two are periodic and generate nothing; the remaining two are the same sequence up to sign.
+- Initial conditions $0, 1$ are the only values available that do not make the sequence identically zero.
 
-Each "minimal" is a flavor of [atomicity](../../../../02-the-process/atoms.md).
+No flavor of [atomicity](../../../../02-the-process/atoms.md) is selected here. The field of candidates is finite because little has been generated, and Closure eliminates all but one of them.
 
-## What minimality is shadowing
+## Note on the relation to algebra
 
-The minimality argument above is the strongest case available *within arithmetic alone*. It understates what is forced.
+An earlier draft of this topic justified Fibonacci by pointing *forward* to algebra: its characteristic polynomial is $x^2 = x + 1$, the self-reference equation, and algebra was said to show that this is what Self-Reference forces.
 
-Order-2 with $a = b = 1$ has a deeper signature: its characteristic polynomial is $x^2 = x + 1$. This is the **self-reference equation** — the algebraic articulation of the framework's seed. The full argument lives in [algebra](../../algebra/algebra.md), where it is shown that $x^2 = x + 1$ is what [Self-Reference](../../../../03-the-grammar/03-self-reference.md) forces when articulated as an equation, and that its roots ($\phi, \psi$) are the eigenvalues of self-referential growth.
+**That argument was circular and has been withdrawn.** [Algebra topic 01](../../algebra/construction/01-the-self-reference-equation.md) derives $x^2 = x + 1$ *by taking the characteristic polynomial of the Fibonacci recurrence* — it lists this topic among its dependencies, and its own commitment note says it "only recognizes the algebraic shadow of an already-existing dynamic." Algebra therefore cannot be what forces Fibonacci; it is downstream of it.
 
-Read from above, then: Fibonacci is not chosen from a menu of minimal recurrences. It is the unique order-2 integer recurrence whose characteristic equation *is* the seed equation in algebraic form. What presents as "minimality" in arithmetic is a substrate-level shadow of structural identity with the seed.
+The enumeration above replaces that argument and grounds Fibonacci **within arithmetic alone**, which is where it belongs. Algebra then legitimately builds on it, and the dependency runs one way only.
 
-The commitment is therefore retroactively reframed by the algebra subdomain: from "self-referential iteration of minimal order with minimal coefficients" (chosen, in arithmetic) to "the recurrence whose characteristic equation is the framework's seed equation" (forced, once algebra is articulated). Within arithmetic alone, the available articulation is minimality; with algebra in view, the forcing becomes visible.
+What survives, and is worth stating without the circularity: the dynamic forced here at the substrate level turns out to have $x^2 = x + 1$ as its characteristic polynomial — the same form that Self-Reference takes when articulated as an equation. That is a **convergence between two levels of articulation**, and convergences are the framework's own strongest evidence (see [transferability](../../../../15-cross-domain-analysis/transferability.md)). It is evidence precisely *because* the two derivations are independent — which they are only if this topic stands on its own.
 
 ## Comparison
 
