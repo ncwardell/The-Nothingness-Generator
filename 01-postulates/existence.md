@@ -25,7 +25,11 @@ Existence alone is unconstrained. Anything could exist in any quantity. Without 
 
 ## What "is observed" means
 
-The postulate is sometimes written as bare $\exists$ (something exists) and sometimes as the slightly stronger "something exists *and is observed*." These are not separate claims; they are the same claim seen from inside.
+The postulate is sometimes written as bare $\exists$ (something exists) and sometimes as "something exists *and is observed*."
+
+**These are genuinely different claims, and the framework does not choose between them.** The bare reading is **not articulable under [Internality](internality.md).** To assert that something exists *whether or not it is witnessed* is to assert something no internal act could establish — it requires a vantage outside the totality from which unwitnessed existence could be certified, and there is no such vantage. Bare $\exists$ is not a weaker option available to the framework; it is a claim that cannot be made from inside.
+
+So the observational form is not the stronger of two readings, adopted by preference. **It is the only form of the postulate that is statable at all** once Internality holds. This is the same constraint that governs the rest of the framework: what can be articulated is limited by what can be articulated *from within*, not by what would be pleasing or economical.
 
 By [Internality](internality.md), every observation is internal. Therefore: for the totality to *be* anything at all, it must distinguish itself within itself. *Being* and *being-witnessed* collapse into the same act once you forbid an outside.
 

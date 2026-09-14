@@ -20,11 +20,13 @@ The conclusion: any complete account of the totality must include the observing 
 
 ## Status
 
-**Strictly derivable** from Existence (in the non-trivial reading that includes observation) + Internality.
+**Strictly derivable** from [Existence](../01-postulates/existence.md) + [Internality](../01-postulates/internality.md).
 
-If you accept the weaker reading of Existence — "something exists, but not necessarily as observed" — then the derivation does not go through. In that reading, observation could be either absent or external, and self-reference is not forced.
+An earlier draft qualified this: *"if you accept the weaker reading of Existence — something exists, but not necessarily as observed — then the derivation does not go through,"* and added that the framework *commits* to the stronger reading. **That qualification is withdrawn**, because it misdescribed the situation as a choice between two available readings.
 
-The framework commits to the stronger reading. This commitment is in [Existence](../01-postulates/existence.md) and is made explicit there: existence and observation are aspects of the same postulate, because Internality forbids any vantage from which non-observed existence could be grounded.
+There is no weaker reading available. As [Existence](../01-postulates/existence.md) sets out, bare $\exists$ — existence whether or not witnessed — **cannot be asserted from inside**: it would require a vantage outside the totality from which unwitnessed existence could be certified, and Internality forbids exactly that. The bare form is not a weaker postulate one might adopt; it is unarticulable.
+
+So Self-Reference is not forced *given a commitment*. It is forced, full stop, by the only form the Existence postulate can take under Internality. No commitment is being made here, and none needs declaring.
 
 ## What this *does* establish
 

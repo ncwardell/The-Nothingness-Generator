@@ -143,21 +143,40 @@ So there is no defect to fix here. What remains is **presentational**: `self-boo
 
 ---
 
-## Finding 3 — `existence.md` and `03-self-reference.md` disagree about the two readings ⚠ **substantive**
+## Finding 3 — `existence.md` and `03-self-reference.md` disagreed about the two readings ✅ **fixed in this pass**
 
-`existence.md` says the bare and observational readings are the same claim:
+`existence.md` said the bare and observational readings are the same claim:
 
 > The postulate is sometimes written as bare $\exists$ … and sometimes as … "something exists *and is observed*." **These are not separate claims; they are the same claim seen from inside.**
 
-`03-self-reference.md` says the choice between them is decisive:
+`03-self-reference.md` said the choice between them is decisive:
 
-> **If you accept the weaker reading of Existence** — "something exists, but not necessarily as observed" — **then the derivation does not go through.** In that reading, observation could be either absent or external, and self-reference is not forced.
+> **If you accept the weaker reading of Existence** … **then the derivation does not go through.** … The framework **commits** to the stronger reading.
 
-If they were genuinely the same claim, no derivation could be sensitive to which one is used. Since one is, they are not the same claim — the observational reading is strictly stronger, and it is load-bearing for Self-Reference.
+Both could not hold. If they were the same claim, no derivation could be sensitive to which was used; since one was, they are different claims — and the observational one was load-bearing for a standing property the README calls strictly forced, while being disclosed only in body text.
 
-**Why it matters.** Self-Reference is advertised in `README.md` as one of four things "the postulates strictly force." It is in fact forced by *Internality plus a substantive idealist reading of Existence*. Both files disclose this honestly in their own text, but the disclosure is buried while the README's headline inherits the stronger claim silently.
+### The resolution was already half-written
 
-**Recommended:** by the framework's own forced-vs-chosen discipline, the strong reading is a **commitment** and should be named as one — either as a fourth postulate or as a declared commitment attached to Existence. Then drop the "same claim" sentence in `existence.md`, which is the part that is actually false.
+`existence.md`'s closing paragraph had the correct argument all along:
+
+> A materialist alternative — "things exist whether or not anyone witnesses them" — would require an outside vantage from which to ground the existence. **Internality forbids that.**
+
+That is not a reason the bare reading is *weaker*. It is a reason the bare reading **cannot be asserted from inside at all**. The file's opening paragraph then contradicted its own closing one by calling them the same claim.
+
+**Applied:**
+
+1. `existence.md` now states that the two are genuinely different claims, and that bare $\exists$ is **not articulable under Internality** — not a weaker option, an unstatable one. The observational form is the only form the postulate can take, not the preferred one.
+2. `03-self-reference.md` withdraws the "commits to the stronger reading" qualification. Self-Reference is forced full stop, by the only form Existence can take. **No commitment is declared, because none is made.**
+
+### This is the third application of the same move
+
+| Site | Looked like | Actually was |
+|---|---|---|
+| Polarity / arithmetic C1 | a minimality choice | the un-partitioned state — the alternative was not yet constructible |
+| Fibonacci / arithmetic C5 | a minimality choice | four candidates; two periodic; survivors differ only by sign |
+| **Existence / Self-Reference** | **a choice between two readings** | **only one reading is statable under Internality** |
+
+In each case what presented as a commitment was an **availability constraint**. The pattern is now general enough to state as a rule: *before declaring a commitment, check whether the alternative it rules out is articulable at that point. If it is not, there is no commitment to declare.*
 
 ---
 
@@ -258,7 +277,7 @@ The generator's epistemic discipline is the strongest thing in the repository. F
 |---|---|---|---|
 | 1 | `02-polarity.md` self-contradiction on minimality | **fixed** | both sections rewritten as generative availability; commitment removed from arithmetic topic 01 |
 | 2 | Self-bootstrap reads as a derivation | **downgraded** — presentational | reframe as a fixed point; co-arising, not deferral |
-| 3 | `existence.md` vs `03-self-reference.md` on the two readings | substantive | name the strong reading as a commitment |
+| 3 | `existence.md` vs `03-self-reference.md` on the two readings | **fixed** | bare ∃ is unarticulable under Internality — not a weaker reading, so no commitment to declare |
 | 4 | "Four standing properties" overcounts | presentational | restate as one + three |
 | 6 | Arithmetic 08 ↔ Algebra 01 **deferral** (an atomicity/Closure failure, not a sequence one) | **was critical** | **fixed** — each node now holds its own argument; the circle is filled, not removed |
 | 5 | Paraconsistency lacks a demarcation criterion | methodological | demarcate by **generativity**: a tension is load-bearing on both sides and produces structure; a defect has an inert side |
