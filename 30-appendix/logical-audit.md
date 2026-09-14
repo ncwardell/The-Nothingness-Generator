@@ -34,9 +34,48 @@ These cannot both hold. A says paired polarity is *chosen* and requires a stated
 
 **And the chain itself sides with A.** `arithmetic/construction/01-polar-bisection.md` spends its entire Commitment section on strong polarity: *"This is the only commitment in this topic. It selects single-paired compensation over distributed compensation, on minimality grounds."* If Claim B were right, that commitment would be unnecessary and the topic's Commitment section should read "None."
 
-**Why it matters.** This is the framework's first substantive move. If paired polarity is forced, the arithmetic chain overstates its commitments and should be corrected. If it is chosen — as A, atoms.md, boundary.md and the chain all say — then Claim B is wrong and the final section of `02-polarity.md` should be withdrawn.
+**Why it matters.** This is the framework's first substantive move. As long as the two claims stand side by side, the chain's first commitment is undefended in one direction and unnecessary in the other.
 
-**Recommended:** delete or rewrite the final section of `02-polarity.md`. The rest of that file is among the most careful writing in the repository; the closing section undoes it.
+### But the resolution is not the obvious one
+
+The obvious fix is to delete Claim B and let "minimality is a commitment" stand. **That is wrong, and the reason exposes a defect in Claim A.**
+
+Claim A's supporting sentence is:
+
+> A non-minimal totality with distributed compensation satisfies the postulates equally well.
+
+This is true **as model theory** — there do exist totalities satisfying $\Sigma = 0$ and $\exists$ in which compensation is distributed. But it reaches that conclusion by *surveying the space of possible totalities and comparing them*, which is a view from outside the totality. **[Internality](../01-postulates/internality.md) forbids exactly that vantage.** Claim A refutes paired polarity using a move the framework does not permit.
+
+Asked from inside — which is the only way the framework may ask — the question is not *"which totalities satisfy the postulates?"* but *"what is articulable at this point, given what has been generated?"* And at the moment of polar bisection, the answer is not a choice among options:
+
+- $\Sigma = 0$ restricted to $E$ yields **"$E$" and "the rest."** That much is forced arithmetic (this is the weak form, already derived).
+- To get *distributed* compensation one must further **partition "the rest"** — which requires a discrimination criterion, plurality, and the means to tell one compensator from another.
+- **None of that has been generated.** Plurality and discrimination are downstream products of the very chain polar bisection begins. Invoking them here imports them from outside.
+
+So binary is not selected over distributed on grounds of elegance. **Binary is the un-partitioned state — what the cut leaves when nothing further has been generated.** Distributed compensation is not a rejected alternative; it is not yet constructible.
+
+This is a different kind of argument from minimality, and it has a different logical character:
+
+| | Says | Status |
+|---|---|---|
+| **Minimality** | among available options, take the smallest | a selection principle — a **commitment** |
+| **Generative availability** | only one option is constructible yet | an availability constraint — **forced by Internality** |
+
+`atoms.md` already contains this argument in its step 4 — *"Articulation requires minimal forms to articulate from. Without atoms at the level, there is nothing internal for the totality to articulate"* — and Claim B is groping toward it with "import-the-least." Both state it in the **vocabulary of minimality**, which is what invites the objection. The content is an availability constraint; the word "minimality" makes it sound like a taste.
+
+### The corollary worth keeping
+
+If forcing comes from what has been generated, then **forcing is strongest where least has been generated, and weakens as the chain accumulates material.** That is a structural prediction about the repo's own shape, and it holds: arithmetic topic 01 carries one commitment, algebra carries one, and the physics modules carry six. The earliest moves are the most forced precisely because the fewest alternatives are articulable.
+
+It also shows the principle does not prove too much. Once integers and operations exist, several articulations *are* constructible, and choosing algebra over geometry (commitment A1) is a genuine choice. Availability bites hardest at the beginning and loosens downstream — which is exactly the behaviour a self-generating chain should have.
+
+**Recommended:** rewrite both sections rather than deleting one.
+
+1. In Claim A, withdraw "satisfies the postulates equally well" — it argues from an external vantage. Replace with: weak polarity is what is derived; paired polarity follows because no partition of the remainder is yet articulable.
+2. Restate Claim B as **generative availability**, not as a flavor of minimality.
+3. Then correct `arithmetic/construction/01-polar-bisection.md`: its Commitment section should read **"None — distributed compensation is not yet articulable"** rather than committing to strong polarity on minimality grounds.
+
+That removes a commitment from the framework's first move instead of defending one — and it answers the objection at its root rather than conceding it.
 
 ---
 
@@ -109,7 +148,23 @@ As stated, this immunizes the framework against *any* internal contradiction: ev
 
 Finding 1 is the live test case. The contradiction in `02-polarity.md` is an editing defect, not a productive tension. Without a stated criterion, nothing in the framework's logic prevents it from being defended as one.
 
-**Recommended:** state the demarcation explicitly. A workable line: *productive tension holds between postulates, and between a structure and its own conditions; a contradiction between two assertions within a single derivation is a defect.* That keeps the founding tension intact while making the framework correctable — and being correctable is what makes the paraconsistency principled rather than protective.
+**The criterion cannot be positional.** The obvious line — *tension holds between postulates, defects occur within derivations* — is too crude, and it invites a fair objection: this audit flags a contradiction as a defect while the framework treats contradiction as its engine. Location alone does not distinguish them.
+
+**The working criterion is generativity, and it is the framework's own standard:**
+
+> **A productive tension is load-bearing on both sides and produces structure. A defect has an inert side and produces nothing.**
+
+Apply it to the two cases:
+
+| | $\Sigma = 0 \wedge \exists$ | Claim A $\wedge$ Claim B in `02-polarity.md` |
+|---|---|---|
+| Is each side load-bearing? | **yes** — remove either and the framework collapses (empty totality, or unconstrained chaos) | **no** — the chain runs entirely on "chosen"; "forced" does no work anywhere downstream |
+| What does holding both produce? | Polarity, and everything after it | **nothing** — no topic uses it |
+| Can both be retained? | **yes** — retaining both *is* the generative act | no — the next writer must pick one to proceed |
+
+The founding tension is held because holding it generates. The polarity contradiction is not held by anything; it sits there, and one side is doing no work. That is the difference, and it is measurable by the repo's own evaluation standard — *generative depth* — rather than by an imported rule about where contradictions may live.
+
+**Recommended:** state that criterion in `logical-foundation.md`. It keeps the founding tension fully intact, rules out using paraconsistency as blanket cover, and makes the test internal: *does holding both sides produce anything?* A tension that generates is the engine; a contradiction that generates nothing is an error, and the framework should want to find those.
 
 ---
 
@@ -119,7 +174,7 @@ Finding 1 is the live test case. The contradiction in `02-polarity.md` is an edi
 - **No stealth import** in the arithmetic, algebra, or topology chains. Every construction examined uses only prior topics plus the postulates; external mathematics appears only in `## Comparison` sections, always in the form "in standard mathematics X; here it is generated as Y." The discipline is real and consistently applied.
 - **No overclaiming in the experiment overviews.** The physics modules label their depth and particle assignments as **chosen hypotheses**, which is the correct status for them.
 
-The generator's epistemic discipline is the strongest thing in the repository. Findings 1, 3 and 5 are all cases where the repo departs from its *own* standard, not from an external one.
+The generator's epistemic discipline is the strongest thing in the repository. Findings 1, 3 and 5 are all cases where the repo departs from its *own* standard, not from an external one. Finding 1 in particular is not a case of the framework claiming too much — it is a case of it **conceding too much**, answering an external-vantage objection on the objection's terms instead of rejecting the vantage.
 
 ---
 
@@ -127,8 +182,8 @@ The generator's epistemic discipline is the strongest thing in the repository. F
 
 | # | Finding | Severity | Fix |
 |---|---|---|---|
-| 1 | `02-polarity.md` self-contradiction on minimality | substantive | delete/rewrite its final section |
+| 1 | `02-polarity.md` self-contradiction on minimality | substantive | rewrite **both** sections as generative availability; then **remove** the commitment from arithmetic topic 01 |
 | 2 | Self-bootstrap presupposes step 3 | substantive | name it; reframe as fixed point |
 | 3 | `existence.md` vs `03-self-reference.md` on the two readings | substantive | name the strong reading as a commitment |
 | 4 | "Four standing properties" overcounts | presentational | restate as one + three |
-| 5 | Paraconsistency lacks a demarcation criterion | methodological | state where tension ends and error begins |
+| 5 | Paraconsistency lacks a demarcation criterion | methodological | demarcate by **generativity**: a tension is load-bearing on both sides and produces structure; a defect has an inert side |
