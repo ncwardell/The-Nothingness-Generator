@@ -69,4 +69,4 @@ The framework's contribution: $T^2$ is selected by *minimality respecting all fo
 
 ## What this enables
 
-With the breathing torus in place, the temporal dynamics — specifically, the breath cycle and its periodicity — can be articulated. This produces the $4\pi$ periodicity of fermions: [02. Spin from breath cycles](02-spin-from-breath-cycles.md) *(planned)*.
+With the breathing torus in place, the temporal dynamics — specifically, the breath cycle and its periodicity — can be articulated. This produces the $4\pi$ periodicity of fermions: `02. Spin from breath cycles` *(planned, not yet written)*.

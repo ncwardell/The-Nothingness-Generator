@@ -33,17 +33,23 @@ This distinction matters. Standard usage often blends arithmetic and algebra; he
 
 | | Commitment | Forces |
 |---|---|---|
-| **C1** | Strong polarity | Polar bisection produces a single paired complement. |
+| **C1** | ~~Strong polarity~~ *(withdrawn — forced, see note below)* | Polar bisection produces a single paired complement. |
 | **C2** | Labels: "1", "−1" | "−1" forced as polar partner of "1". |
 | **C3** | Addition (binary form of $\Sigma$) | Subtraction forced as polar partner. Identity, inverses, associativity, commutativity forced by coherence with $\Sigma$. |
 | **C4** | Iteration / time *(reframed as forced — see note below)* | Multiplication forced as iterated addition; division forced as iterated subtraction. |
-| **C5** | Self-referential iteration of minimal order with minimal coefficients and minimal initial conditions | Fibonacci: $F(n) = F(n-1) + F(n-2)$, $F(0)=0, F(1)=1$. |
+| **C5** | ~~Self-referential iteration of minimal order, coefficients and initial conditions~~ *(withdrawn — forced, see note below)* | Fibonacci: $F(n) = F(n-1) + F(n-2)$, $F(0)=0, F(1)=1$. |
 
 That is arithmetic's full commitment list. Each commitment cascades through *all four* standing properties (Closure, Polarity, Self-Reference, Internality of Relations).
 
+**A note on C1.** C1 is **withdrawn as a commitment.** It previously selected single-paired compensation over distributed compensation on minimality grounds. But distributed compensation requires partitioning the compensating remainder, which requires plurality and a discrimination criterion — neither of which has been generated at Topic 01. The paired form is not chosen over the distributed form; it is the **un-partitioned state**. See [Polarity](../../../03-the-grammar/02-polarity.md) (Reading note) and [Topic 01](construction/01-polar-bisection.md).
+
 **A note on C4.** What was committed here as "iteration is admissible" is forced by [Self-Reference](../../../03-the-grammar/03-self-reference.md) at the operational level. Operations on outputs are admitted by the standing properties: Closure makes outputs internal, Self-Reference references internal structure, and [Internality of Relations](../../../03-the-grammar/04-internality-of-relations.md) forbids external restriction on what operations take as inputs. The time-index is the structural articulation of repeated self-application, not a semantic overlay. The argument is available within arithmetic itself — no later lens required. See [Topic 06](construction/06-iteration-and-time.md#commitment) for the full derivation.
 
-**A note on C5.** The minimality justification is a substrate-level articulation. When [algebra](../algebra/algebra.md) introduces the self-reference equation $x^2 = x + 1$, C5 is retroactively recognized as forced — Fibonacci is the unique integer recurrence whose characteristic equation is the framework's seed in algebraic form. From within arithmetic alone, minimality is the strongest available argument; with algebra in view, the forcing becomes visible. See [Topic 08 — What minimality is shadowing](construction/08-fibonacci.md#what-minimality-is-shadowing).
+**A note on C5.** C5 is **withdrawn as a commitment.** It previously rested on minimality, and was said to be "retroactively recognized as forced" once algebra introduced $x^2 = x + 1$. That reframing was **circular**: [algebra topic 01](../algebra/construction/01-the-self-reference-equation.md) derives $x^2 = x+1$ by taking the characteristic polynomial *of* Fibonacci, and lists Topic 08 among its dependencies. It cannot be what forces Fibonacci.
+
+Fibonacci is instead forced **within arithmetic alone**, by enumeration. At Topic 08 the value system contains only $\{1, -1, 0\}$, so an order-2 recurrence $F(n) = aF(n-1) + bF(n-2)$ admits exactly four coefficient pairs — coefficients must be values, and no others have been generated. Two of the four ($a,b$ with $b = -1$) have characteristic roots on the unit circle: they are periodic, never leave $\{0,1,-1\}$, and generate nothing. The two survivors produce identical magnitudes and differ only by sign, which Polarity and bidirectional iteration (C4, Topic 07) already govern. One dynamic remains, up to a sign convention.
+
+This is *generative availability*, not minimality — see [Polarity](../../../03-the-grammar/02-polarity.md) (Reading note) and [Topic 08](construction/08-fibonacci.md).
 
 ## What arithmetic produces
 
@@ -73,7 +79,7 @@ After Phase IV, arithmetic is substantially complete as a substrate. The articul
 
 ### Phase III — Self-referential generation of integers
 
-- **[08. Fibonacci](construction/08-fibonacci.md)** — the minimal self-referential dynamic recurrence
+- **[08. Fibonacci](construction/08-fibonacci.md)** — the self-referential dynamic recurrence, forced by enumeration
 - **[09. NegaFibonacci](construction/09-negafibonacci.md)** — Fibonacci's polar partner via backward iteration
 - **[10. Zeckendorf composition](construction/10-zeckendorf-composition.md)** — every positive integer as a unique sum of non-consecutive Fibonacci atoms
 - **[11. Negative integers](construction/11-negative-integers.md)** — $\mathbb{Z}$ closed under polarity
@@ -95,15 +101,16 @@ The integers are not points on a pre-existing line; they are unique compositions
 **Chosen:**
 
 - The lens itself: articulating via arithmetic.
-- C1–C3 (strong polarity, labels, addition as binary form of Σ).
-- C5 *within arithmetic alone* (on minimality grounds); reframed as forced once algebra articulates the self-reference equation.
+- C2–C3 (labels, addition as binary form of Σ).
+- ~~C1~~ — **withdrawn**; the paired form is the un-partitioned state, not a minimality selection (see the note on C1 above).
+- ~~C5~~ — **withdrawn**; Fibonacci is forced within arithmetic by enumeration over the four available coefficient pairs (see the note on C5 above).
 
 **Forced (given the choices):**
 
-- The polar pair, zero, the negation map.
+- The polar pair (forced by generative availability — what was previously C1), zero, the negation map.
 - Subtraction (forced by Polarity at the operational level), division (forced by Polarity applied to multiplication).
 - **Iteration and time (forced by Self-Reference at the operational level — what was previously C4).**
-- The Fibonacci sequence (forced by C5; structurally forced by seed-identity once algebra is in view).
+- The Fibonacci sequence — forced by enumeration: only four coefficient pairs are available, two are periodic, and the survivors differ only by sign.
 - The integers via Zeckendorf composition; their negatives via polar reflection.
 
 ## Importing this module

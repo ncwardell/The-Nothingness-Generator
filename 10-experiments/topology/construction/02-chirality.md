@@ -12,7 +12,7 @@
 
 - [01. The Triangle](01-the-triangle.md) — the directed 3-cycle.
 - [Topology module — T1](../topology.md#commitments) — directedness is part of the substrate.
-- [Polarity (weak form)](../../../03-the-grammar/02-polarity.md) — preserved structurally; chirality's polar partner forced in [Topic 03](03-the-double-triangle.md).
+- [Polarity (weak form)](../../../03-the-grammar/02-polarity.md) — preserved structurally.
 
 ## Commitment
 

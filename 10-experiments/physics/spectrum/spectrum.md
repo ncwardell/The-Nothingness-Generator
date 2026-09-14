@@ -8,7 +8,7 @@
 
 Spectrum is the second subdomain of [physics](../physics.md). It articulates *what inhabits the spacetime arena* — particles, their identities, their masses. This subdomain imports [spacetime](../spacetime/) for the arena and produces the particle spectrum.
 
-This file is the **module overview**. The atomic step-by-step articulation will live in [`construction/`](construction/).
+This file is the **module overview**. The atomic step-by-step articulation will live in `construction/` (not yet written).
 
 ## Dependencies
 

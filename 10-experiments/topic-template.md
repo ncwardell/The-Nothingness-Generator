@@ -177,7 +177,7 @@ The name should describe the topic clearly (e.g., `07-fibonacci.md`, `13-the-deg
 
 When linking to:
 
-- A topic in the same construction chain: `[NN. Name](NN-name.md)` (where NN is the topic number, e.g., `07-fibonacci.md`).
+- A topic in the same construction chain: `[NN. Name` (filename)`` (where NN is the topic number, e.g., `07-fibonacci.md`).
 - A topic in a different subdomain: relative path through the parent.
 - A framework structure: relative path to the structure's file.
 

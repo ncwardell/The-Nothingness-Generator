@@ -8,7 +8,7 @@
 
 Forces is the third subdomain of [physics](../physics.md). It articulates *how things interact* — the four fundamental forces and their coupling constants. This subdomain imports [spacetime](../spacetime/) and [spectrum](../spectrum/) and produces the force-coupling formulas.
 
-This file is the **module overview**. The atomic step-by-step articulation will live in [`construction/`](construction/).
+This file is the **module overview**. The atomic step-by-step articulation will live in `construction/` (not yet written).
 
 ## Dependencies
 

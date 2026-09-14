@@ -30,7 +30,7 @@ The framework commits to the stronger reading. This commitment is in [Existence]
 
 - That a complete description of the totality must reference itself.
 - That observer and observed are not separable in any global sense.
-- That [Tarski's undefinability](../00-orientation/logical-foundation.md#what-about-russell-gödel-etc) and related foundational results apply: the totality cannot be fully described from within using a finite formal apparatus.
+- That [Tarski's undefinability](../00-orientation/logical-foundation.md#what-about-russell-gödel-tarski) and related foundational results apply: the totality cannot be fully described from within using a finite formal apparatus.
 
 ## Self-Reference as distinguishment
 

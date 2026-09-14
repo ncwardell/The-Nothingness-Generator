@@ -189,6 +189,38 @@ The founding tension is held because holding it generates. The polarity contradi
 
 ---
 
+## Sweep results (mechanical re-audit)
+
+After the repairs above, the repository was swept programmatically for the defect *patterns* the findings represent, rather than for the individual instances.
+
+| Check | Before | After |
+|---|---|---|
+| Topics depending on a **later** topic in their own chain | 1 | **0** |
+| Prose justifying a topic by pointing **forward** to a later module | 2 | **0** |
+| Commitments resting on **minimality** in any construction topic | 2 | **0** |
+| Module-level mutual dependence | 2 candidates | **0 real** |
+| Broken links and section anchors | 7 | **0** |
+
+Notes on what the sweep cleared rather than fixed:
+
+- **`dynamics` ↔ `topology`** flagged as mutual, but is not. `topology/01` imports the minimum-cycle requirement from `dynamics/03`; `dynamics` mentions topology only to *disclaim* scope (*"the structural details … are the work of the topology experiment"*). A scope disclaimer is not a dependency. The direction is one-way.
+- **`algebra` ↔ `arithmetic`** was a real cycle (Finding 6) and is now one-way.
+- **`topology/02-chirality`** listed Topic 03 under Dependencies for a consequence, not a dependency. Moved to *What this enables*.
+- Four dangling links pointed at **unwritten** physics `construction/` directories and a planned topic. De-linked rather than stubbed — an empty directory would misrepresent the chain's state.
+
+### Commitments removed, not defended
+
+The generative-availability argument (Finding 1) eliminated two standing commitments rather than justifying them:
+
+| | Was | Now |
+|---|---|---|
+| Arithmetic **C1** | strong polarity, on minimality grounds | **withdrawn** — the paired form is the un-partitioned state |
+| Arithmetic **C5** | minimal order, coefficients, initial conditions | **withdrawn** — four candidates exist; two are periodic; the survivors differ only by sign |
+
+Arithmetic's declared commitment list is now **C2–C4**, down from C1–C5, with C4 already noted as forced. The chain's first move carries no commitment at all.
+
+---
+
 ## What the audit did not find
 
 - **No broken derivation** in the grammar, apart from Finding 6 (now repaired). The weak-polarity derivation is valid arithmetic; the self-reference derivation is valid given the stated reading of Existence; Closure follows from Internality trivially, as claimed.
