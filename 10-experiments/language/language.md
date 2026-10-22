@@ -35,7 +35,9 @@ The language constructed here is **Loshi**. Each Loshi word fills a Fibonacci-po
 | **L3** | Compounds are built via Zeckendorf composition | Non-Fibonacci-position concepts are articulated as compositions of foundational words. |
 | **L4** | The creation sentence is the bootstrap-articulation | The articulation of the framework's seed in this lens is a sentence — the creation sentence. |
 
-These four commitments are minimal for a self-grounding language lens. Each cascades through the four standing properties.
+| **L5** | Word order separates number from phrase | Descending, non-consecutive Fibonacci words read as an integer; any other juxtaposition reads as a phrase. Introduced in [13](construction/13-the-genesis-text.md); not needed for the bootstrap. |
+
+L1–L4 are minimal for a self-grounding language lens. Each cascades through the four standing properties.
 
 ## What language produces
 
@@ -46,6 +48,7 @@ These four commitments are minimal for a self-grounding language lens. Each casc
 | **III — Compound words** | 07–09 | Sheklahk, Shiloshi, Syn — built via Zeckendorf |
 | **IV — Articulation** | 10–11 | Zeckendorf-composition principle, the creation sentence |
 | **V — Bootstrap** | 12 | Verification: language articulates the framework's seed |
+| **VI — Expansion** | 13 | The genesis text: one verse per word, Eksah to Syn; L5 word order |
 
 ## The chain at a glance
 
@@ -75,6 +78,10 @@ These four commitments are minimal for a self-grounding language lens. Each casc
 ### Phase V — Bootstrap
 
 - **[12. Language bootstraps](construction/12-language-bootstraps.md)** — verification that the language articulates the framework's seed in linguistic-narrative vocabulary.
+
+### Phase VI — Expansion
+
+- **[13. The genesis text](construction/13-the-genesis-text.md)** — the creation sentence expanded to one verse per word; word order (L5) separates integers from phrases. Three verses proposed, not yet settled.
 
 ## Forced vs. chosen, in the lens of itself
 

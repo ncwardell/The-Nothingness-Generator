@@ -93,3 +93,5 @@ It also does not demonstrate that existing creation narratives across cultures *
 The language lens is now bootstrap-verified. Loshi can be referenced as a structural overlay vehicle by other experiments (where the foundational words may serve as labels for structural positions in domains like physics or biology — those applications belong in their respective experiments, not here).
 
 The next experiments will be additional lenses — physics, biology, etc. — each with their own substrate, articulation, and bootstrap. The pattern is set: Loshi demonstrates that a complete bootstrap-articulation is achievable in narrative form; future experiments can use the [algebraic template](../../../15-cross-domain-analysis/transferability.md#the-algebraic-package-as-canonical-structural-template) and Loshi's example as templates for their own constructions.
+
+Within the language itself, the creation sentence can be expanded into a full creation narrative covering every word to Syn: [13. The genesis text](13-the-genesis-text.md).
