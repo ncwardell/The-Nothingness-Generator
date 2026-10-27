@@ -34,7 +34,7 @@ The structural position the word fills:
 
 ## The structural meaning
 
-Sheklahk articulates the position F(6) = 8. In the Fibonacci sequence, $F(6) = F(5) + F(4) = 5 + 3 = 8$, but in Loshi terms it's $F(6) = F(5) + F(3) = 5 + 2$ via Zeckendorf — Loshi (life) seen plus the polar pair (Eklahk) seen, recomposing as structural seeing.
+Sheklahk articulates the position F(6) = 8. In the Fibonacci sequence, $F(6) = F(5) + F(4) = 5 + 3 = 8$ — Loshi and Lo, life and the self it carries. Being a Fibonacci number, 8 is its own Zeckendorf decomposition: Sheklahk is a foundational position, not a Zeckendorf sum. Its *word-form* is built from Shi + Eklahk — the polar pair seen, recomposing as structural seeing.
 
 The decomposition Shi + Eklahk articulates: "seeing the polarity-structure of myself." This is the *outer* breath — looking at the structure that constitutes the self.
 
